@@ -32,6 +32,10 @@ int Stack::pop() {
     return a[currentindex--];
 }
 
+bool Stack::isEmpty() {
+    return (currentindex < 0);
+}
+
 int main() {
     class Stack mystack;
     mystack.push(11);
